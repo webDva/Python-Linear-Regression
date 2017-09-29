@@ -22,7 +22,7 @@ def calculateLinearRegressionLine(x, y):
     r_xy_correlation = diffprod / math.sqrt(xdiff2 * ydiff2)
     
     # Using the calculated standard deviations and correleation, calculate the slope of the regression line.
-    b = r_xy_correlation * (x_standardDeviation / y_standardDeviation)
+    b = r_xy_correlation * (y_standardDeviation / x_standardDeviation)
     
     # Calculate the y-intercept of the regression line.
     a = avg_y - b * avg_x
